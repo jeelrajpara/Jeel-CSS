@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements</title>
+</head>
+<style>
+   p::first-letter{
+    font-weight: bold;
+    color: red;
+  
+   } 
+   li::first-line{
+    font-size: 25px;
+    color: lightgreen;
+   }
+   ::selection{
+       background-color: yellow;
+       color: brown;
+   }
+   h1::after{
+    content: "World";
+    color: white;
+    background-color: green;
+   }
+   h1::before{
+       content: "Hello";
+       color: white;
+       background-color: red;
+   }
+</style>
+<body>
+    <h1>Pseudo element selector</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et hic officiis, possimus eos exercitationem reprehenderit consectetur eius ullam molestias corrupti vitae ut? Quaerat, commodi autem.</p>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum dolor.</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum deserunt harum voluptatum nam nesciunt odio blanditiis consequuntur voluptates excepturi error.</p>
+</body>
+</html>
