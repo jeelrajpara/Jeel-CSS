@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>combinator</title>
+</head>
+<style>
+  div > p{
+     color: red;
+     background-color: yellow;
+
+  }
+</style>
+<body>
+  <h2>Descendent combinator</h2>
+<div >
+  <p>This is paragraph 1 in div 1</p>
+  <i>This is italic</i>
+  <p>This is paragraph 2 in div 2</p>
+</div>
+<div>
+  <i>This is italic</i>
+<p>This is paragraph outside that div</p>
+<p>This is paragraph 2 in div 2</p>
+</div>
+<section>
+  <p>This is Paragraph 1.</p>
+  <div>
+  <p>This is Paragraph 2.</p>
+  </div>
+  <h2></h2>
+</body>
+</html>
