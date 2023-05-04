@@ -27,6 +27,9 @@
     input:default + label{
         color: red;
     }
+    .checkbox input[type=".checkbox"]{
+         display: block;
+    }
 </style>
 <body>
     <form>
@@ -45,12 +48,12 @@
         <label for="email">E-mail</label>
         <input type="email" name="email" required id="email">
         <br><br>
-        <label for="checkbox">Checkbox</label> <input type="checkbox" id="checkbox" >
-        <label for="checkbox">Male</label>
-        <input type="checkbox" checked id="checkbox" >
-        <label for="checkbox">Male</label>
-        <input type="checkbox" id="checkbox" >
-        <label for="checkbox">Male</label> <br> <br>
+        <label for="container">Checkbox</label> <input type="checkbox" id="checkbox" >
+        <label class="checkbox">Male</label>
+        <input type="checkbox" checked class="checkbox" >
+        <label class="checkbox">Male</label>
+        <input type="checkbox" class="checkbox" >
+        <label class="checkbox">Male</label> <br> <br>
 
 
         <label for="radio">Radio</label> <input type="radio" name="" id="radio">

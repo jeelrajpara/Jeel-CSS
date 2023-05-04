@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox styles</title>
+</head>
+<style>
+.check{
+    display: inline-flex;
+    align-items: center;
+}
+.checkboxinput{
+    display: none;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.checkbox::after{
+    content: '\2714';
+    color: white;
+}
+.checkboxinput:checked + .checkbox{
+    background-color: rgb(156, 156, 237);
+    border-color: rgb(156, 156, 237);
+}
+</style>
+<body>
+    <form>
+
+        <label for="firstname">First name</label>
+        <input type="text" name="first name" id="firstname">
+        </div>
+        <div>
+            <label for="lastname">Last name </label>
+             <input type="text" name="lastname" id="lastname">
+        </div>
+        <h2>Customising checkbox</h2>
+       <label class="check" for="checkbox">
+        <input checked class="checkboxinput" type="checkbox" name="mycheckbox" id="mycheckboxID">
+        <div class="checkbox"></div>
+        Helloo
+       </label>
+        
+    </form>
+</body>
+
+</html>
