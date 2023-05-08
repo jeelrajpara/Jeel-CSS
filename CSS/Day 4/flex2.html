@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .header {
+       
+        padding: 20px;
+        margin-bottom: 2px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+        min-height: 100px;
+        min-width: auto;
+        margin-top: 2px;
+    }
+
+    .navbar {
+        display: flex;
+        background-color: #333;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        color: white;
+        text-align: center;
+        padding: 40px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        color: rgb(84, 149, 229);
+        background-color: grey;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 500px;
+        font-variant: small-caps;
+        margin-top: 2px;
+
+    }
+
+    .about-me {
+        margin: 2px;
+        width: 350px;
+        background-color: #1abc9c;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        color: white;
+    }
+
+    .box1 {
+        margin: 5px;
+        padding: 30px;
+        border: 10px solid slategray;
+        height: 100px;
+        width: 310px;
+        color: white;
+        background-color: slategray;
+        text-align: center;
+    }
+
+    .container2 {
+        margin: 2px;
+        display: flex;
+        align-items: flex-start;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+
+    .items {
+        
+        background-color: #1abc9c;
+        min-height: 500px;
+        max-width: 890px;
+    }
+
+    .box2 {
+        height: 150px;
+        width: 850px;
+        background-color: slategray;
+        margin: 10px;
+        padding: 70px;
+        text-align: center;
+        color: white;
+    }
+
+    .box3 {
+        height: 480px;
+        width: 850px;
+        background-color: slategray;
+        margin: 10px;
+        padding: 70px;
+        text-align: center;
+        color: white;
+    }
+    .footer{
+        height: 100px;
+        width: 100%;
+        background-color: #1abc9c;
+        margin: 2px;
+        padding: 50px;
+        text-align: center;
+        color: white;
+    }
+</style>
+
+<body>
+    <!-- Header -->
+    <div claas="header">
+        <h1 class="header">Welcome to my website</h1>
+    </div>
+    <!-- navbar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About me</a>
+        <a href="#">Contact me</a>
+    </div>
+    <!-- Container 1 -->
+    <div class="container">
+        <div class="about-me">
+            <b style="text-align: center;"> About me</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, sint!</p>
+            <img src="D:\Training@saeculum\Jeel-CSS\CSS\Day 2\1.jpg" alt="">
+            <div class="box1">Dummy box</div>
+            <div class="box1">Dummy box 2</div>
+            <div class="box1">Dummy box 3</div>
+        </div>
+        <!-- Sidebar -->
+        <div class="container2">
+            <div class="items">
+                <div class="box2">Title bar</div>
+                <div class="box3">Content</div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">Footer</div>
+</body>
+</html>
