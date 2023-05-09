@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,102 +8,122 @@
     <title>Document</title>
 </head>
 <style>
-    .wrapper{
-      display: flex;
-      width: 100%;
+    * {
+        margin: 0;
+        padding: 0;
     }
-    .box1{
+
+    .wrapper {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .sec {
+        display: flex;
+    }
+
+    .sec1-1 {
         background-color: red;
-        height: 200px;
-        width: 100px;
+        height: 280px;
+        width: 200px;
     }
-    .box2{
+
+    .sec1-2 {
         background-color: darkred;
-        height: 200px;
-        width: 100px;
-    }
-    .box3{
-        background-color: slategray;
-        height: 150px;
-        width: 150px;
-    }
-    .box4{
-        background-color: lightcoral;
-        height: 200px;
-        width: 300px;
-    }
-    .box5{
-        background-color: rgb(107, 25, 38);
-        height:200px;
-        width: 300px;
-    }
-    .wrapper2{
-        display: flex;
-    }
-    .box6{
-        height: 200px;
-        width: 200px;
-        background-color: yellow;
-    }
-    .box7{
-        background-color: rgb(66, 30, 30);
-        height: 150px;
-        width: 150px;
-    }
-    .box8{
-        background-color: rgb(168, 40, 62);
-        height: 150px;
-        width: 300px;
-    }
-    .box9{
-        background-color:rgb(199, 65, 88);
-        height: 50px;
-        width: 300px;
-    }
-    .wrapper3{
-        display: flex;
-        
-    }
-    .box10{
-        background-color: yellow;
-        height: 50px;
+        height: 280px;
         width: 200px;
     }
-    .box11{
-        background-color: rgba(165, 42, 42, 0.737);
-        height: 50x;
-        width: 150px;
+
+    .sec1-3 {
+        background-color: yellow;
+        height: 290px;
+        width: 400px;
     }
-    .box12{
-        background-color: rgb(215, 60, 86);
+
+    .sec2-1 {
+        background-color: rgb(63, 181, 220);
+        height: 190px;
+        width: 200px;
+
+    }
+
+    .sec2-2 {
+        background-color: blue;
+        height: 190px;
+        width: 200px;
+    }
+
+    .sec2-3 {
+        background-color: rgb(141, 141, 234);
+        height: 190px;
+        width: 200px;
+    }
+
+    .sec3-1 {
+        background-color: hotpink;
+        height: 250px;
+        width: 400px;
+    }
+
+    .sec3-2 {
+        background-color: rgb(166, 69, 102);
+        height: 250px;
+        width: 400px;
+    }
+
+    .sec3-3 {
+        background-color: rgb(220, 72, 97);
+        height: 70px;
+        width: 400px;
+    }
+
+    .sec4-1 {
+        background-color: darkorchid;
+        height: 250px;
         width: 300px;
-        height: 50px;
     }
-    .box13{
-        background-color: chocolate;
-        height: 50px;
+
+    .sec4-2 {
+        background-color: rgb(168, 110, 223);
+        height: 70px;
+        width: 300px;
+    }
+
+    .sec4-3 {
+        background-color: darkorchid;
+        height: 250px;
         width: 300px;
     }
 </style>
+
 <body>
     <div class="wrapper">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-        <div class="box4"></div>
-        <div class="box5"></div>
-    </div>
-    <div class="wrapper2">
-        <div class="box6"></div>
-        <div class="box7"></div>
-        <div class="box8"></div>
-        <div class="box9"></div>
-    </div>
-    <div class="wrapper3">
-        <div class="box10"></div>
-        <div class="box11"></div>
-        <div class="box12"></div>
-        <div class="box13"></div>
+        <div class="col">
+            <div class="sec">
+                <div class="sec1-1"></div>
+                <div class="sec1-2"></div>
+            </div>
+            <div class="sec1-3"></div>
+        </div>
+
+        <div class="col">
+            <div class="sec2-1"></div>
+            <div class="sec2-2"></div>
+            <div class="sec2-3"></div>
+        </div>
+        <div class="col">
+            <div class="sec3-1"></div>
+            <div class="sec3-2"></div>
+            <div class="sec3-3"></div>
+        </div>
+        <div class="col">
+            <div class="sec4-1"></div>
+            <div class="sec4-2"></div>
+            <div class="sec4-3"></div>
+        </div>
     </div>
 </body>
+
 </html>

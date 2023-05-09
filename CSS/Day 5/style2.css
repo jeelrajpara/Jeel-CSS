@@ -1,0 +1,85 @@
+*{
+    margin: 1px;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper{
+    /* display: flex; */
+    height: 100%;
+    width: 100%;
+}
+.col{
+    height: 100%;
+    width: 20%;
+}
+.sec1-1{
+    background-color: tomato;
+    height: 65%;
+}
+.sec1-2{
+    background-color: lightgreen;
+    height:25% ;
+}
+.sec1-3{
+    background-color: lightblue;
+    height: 10%;
+}
+.col2{
+    height: 100%;
+    width: 25%;
+}
+.sec2-1{
+    background-color: gold;
+    height: 70%;
+}
+.sec2-2{
+    background-color: lightgreen;
+    height: 20%;
+}
+.sec2-3{
+    background-color: lightblue;
+    height: 10%;
+}
+.col3{
+    height: 100%;
+    width: 15%;
+}
+.sec3-1{
+    background-color: lightblue;
+    height: 20%;
+}
+.sec3-2{
+    background-color: tomato;
+    height: 80%;
+}
+.col4{
+    height: 100%;
+    width: 20%;
+}
+.sec4-1{
+    background-color: lightgreen;
+    height: 70%;
+}
+.sec4-2{
+    background-color: lightblue;
+    height: 30%;
+}
+.col5{
+    width: 20%;
+    height: 100%;
+}
+.sec5-1{
+    background-color: lightblue;
+    height: 40%;
+}
+.sec5-2{
+    background-color: lightgreen;
+    height: 30%;
+}
+.sec5-3{
+    background-color: tomato;
+    height: 30%;
+}
