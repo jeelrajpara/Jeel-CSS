@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+.main{
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+.box{
+    height: 100%;
+    width: 25%;
+}
+.black{
+    background-color: black;
+
+}
+.maroon{
+    background-color: maroon;
+}
+.grey{
+    background-color: slategray;
+}
+.red{
+    background-color: red;
+}
+.circle1{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: fixed;
+    left: 15%;
+    background-color: brown;
+}
+.circle2{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: fixed;
+    right: 15%;
+    background-color: navy;
+}
+.circle3{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: fixed;
+    right: 40%;
+    background-color:seagreen;
+}
+

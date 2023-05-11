@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+   
+    border: 1px solid black;
+    height: 40%;
+    width: 98%;
+    margin: 3px;
+    position: relative;
+    background-color: bisque;
+}
+.box{
+    display: inline-block;
+    border: 3px solid palevioletred;
+    height: 100%;
+    width: 25%;
+    margin: 1px;
+}
+#box3{
+    position: relative;
+    right:25px;
+    left: 25px;
+    top: 10px;
+}
+#box4{
+    position: absolute;
+    top: 25px;
+    left: 50px;
+}
+#box2{
+    position: fixed;
+    right: 0;
+    height: 40%;
+}
+p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+#box1{
+    position: sticky;
+
+    height: 40%;
+}
