@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow property</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        margin: 20px;
+        padding: 20px;
+        background-color: khaki;
+    }
+    #card1{
+        box-shadow: 10px 10px lightblue;
+    }
+    #card2{
+        box-shadow: -5px -7px 3px pink;
+    }
+    #card3{
+        box-shadow: 10px 10px 5px 7px navy;
+    }
+    #card4{
+        box-shadow: 3px 5px  3px green,-5px -7px 3px red;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, ad quas rerum quod tempora voluptates accusamus ipsum ullam et nesciunt. Temporibus assumenda totam commodi cum? Libero ducimus harum neque aperiam!</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora dolor nisi saepe blanditiis, accusantium explicabo error quam magni, architecto libero quod animi corrupti id, laboriosam molestiae! Laudantium nobis distinctio optio.</p>
+        </div>
+        <div class="card" id="card3">
+             <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptas! Culpa saepe voluptatum dignissimos repudiandae, ut est consequatur quibusdam magnam rerum, necessitatibus debitis nulla. Odio porro non necessitatibus animi sunt.</p>
+        </div>
+        <div class="card" id="card4">
+            <h2>card3</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, voluptas! Culpa saepe voluptatum dignissimos repudiandae, ut est consequatur quibusdam magnam rerum, necessitatibus debitis nulla. Odio porro non necessitatibus animi sunt.</p>
+       </div>
+    </div>
+</body>
+</html>
