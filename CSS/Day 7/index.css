@@ -13,9 +13,10 @@
     height: 50%;
     width: 100%;
 }
-.box{
+.sec{
+    display: flex;
     height: 100%;
-    width: 25%;
+    width: 50%;
 }
 .black{
     background-color: black;
@@ -31,27 +32,26 @@
     background-color: red;
 }
 .circle1{
-    height: 250px;
-    width: 250px;
+    position: absolute;
     border-radius: 50%;
-    position: fixed;
-    left: 15%;
-    background-color: brown;
+    background-color: aqua;
+    height: 50%;
+    width: 25%;   
+    left: 13%;
 }
 .circle2{
-    height: 250px;
-    width: 250px;
+    position: absolute;
     border-radius: 50%;
-    position: fixed;
-    right: 15%;
-    background-color: navy;
+    background-color: palevioletred;
+    height: 50%;
+    width: 25%;   
+    right: 12%;
 }
 .circle3{
-    height: 250px;
-    width: 250px;
+    position: absolute;
     border-radius: 50%;
-    position: fixed;
-    right: 40%;
-    background-color:seagreen;
+    background-color: green;
+    height: 50%;
+    width: 25%;   
+    left: 38%;
 }
-
