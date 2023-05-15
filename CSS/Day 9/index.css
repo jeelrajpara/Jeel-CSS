@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: lavender;
+}
+.btn{
+    border: 1px solid black;
+    position: relative;
+    /* left: 45%; */
+    margin: 2px;
+    padding: 30px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    overflow: hidden;
+    font-size: 30px;
+}
+.btn-top::before{
+    content: "Thanks";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 100%;
+    background-color: blueviolet;
+    transition: 2s;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    
+}
+.btn-top:hover::before{
+    bottom: 0%;
+}
+.btn-border::before{
+      content: "";
+      position: absolute;
+      top: 100%;
+      bottom: 100%;
+      right: 100%;
+      left: 100%;
+      border: 2px solid black;
+      /* transition: 1s ease-in-out; */
+}
+.btn-border:hover::before{
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+}
+.btn-circle::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    bottom: 100%;
+    left: 100%;
+    right: 100%;
+    border-radius: 50%;
+    background-color: bisque;
+    z-index: -1;
+}
+.btn .btn-circle{
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-circle:hover::before{
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    
+}
