@@ -12,7 +12,6 @@ body{
     width: 100%;
 }
 .header{
-    height: 10%;
     width: 100%;
 }
 .navbar{
@@ -37,8 +36,8 @@ body{
 .disabled{
     margin: 2px;
 }
-.search{
-    padding: 5px;
+#search{
+    padding: 4px;
     margin: 4px;
     position: absolute;
     top: 0;
@@ -54,9 +53,8 @@ body{
     border-radius: 5px;
 }
 .container{
+     margin: auto;
    
-    margin: auto;
-    height: 80%;
     width: 80%;
 }
 .sub-container{
@@ -64,38 +62,40 @@ body{
 }
 .card{
     width: 500px;
-    border-radius: 10px;
-    border: 1px solid transparent;
+   
     margin: 15px;
     padding: 10px;
     height: 400px;
 }
+img{
+    border: 1px solid black;
+    border-radius: 8px;
+}
 .class1{
-    border: 2px solid #0d6efd;
-    border-radius: 5px;
-    color: #0d6efd;
+    width: 25%;
+    border-radius: 2px;
+    background-color: #0d6efd;
+    color: white;
 }
 .container2{
-   height: 20%;
+   height: 10%;
    width: 100%;
    position: relative;
-   top: 70%;
    background-color: #ffc107;
    margin: 2px;
 }
 .footer1{
     position: absolute;
     display: flex;
-    left: 50%;
+    left: 40%;
     padding: 4px;
     margin: 2px;
 }
 .footer2{
-    background-color: #ffc107;
     margin: 2px;
-    padding: 4px;
+    padding: 5px;
     position: absolute;
-    left: 50%; 
+    left: 45%; 
     top: 30%;
     margin: 2px;
 }
