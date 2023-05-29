@@ -46,7 +46,7 @@ a{
     height: 100%;
     width: 100%;
     background-attachment: fixed;
-    position: relative;
+    
 }
 h2{
     font-size: 40px;
@@ -55,13 +55,11 @@ h2{
 .cont-1-text{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-bottom: 10px;
-    position: absolute;
-    top: 30%;
+   
+   
     color: #fff;
     background-color: #000;
-    position: absolute;
-    bottom: 30%;
+    
 }
   
 .main-cont-2{
@@ -82,6 +80,9 @@ h2{
     top: 10%;
     text-align: center;
     color: #fff;
+}
+.mb-2{
+    margin-bottom: 2rem;
 }
 .text-cont-2{
     position: absolute;
