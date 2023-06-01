@@ -19,7 +19,7 @@ body{
 .card-wrapper{
    height: 80%;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
 }
 .card{
     background-color: purple;
@@ -32,7 +32,7 @@ body{
     width: 100%;
     background-color: #fff;
     border-radius: 20px;
-    border-bottom-right-radius: 40%;
+    border-bottom-right-radius: 50%;
     display: flex;
     text-align: center;
     justify-content: center;

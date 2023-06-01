@@ -28,7 +28,12 @@ ul{
 li{
     color: rgb(91, 91, 165);
 }
-
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mb{
+    margin-bottom: 0.5rem;
+}
 .main-cont-2{
     width: 55%;
     border: 2px solid gray;
