@@ -58,6 +58,7 @@
     margin-right: 8px;
 }
 .cont-sec-1{
+    width: 30%;
     padding: 20px;
     border: 1px solid black;
     border-radius: 15px;
@@ -76,6 +77,7 @@ ul{
     list-style-type: none;
 }
 .cont-sec-2{
+    width: 30%;
     padding: 20px;
     border: 2px solid blue;
     border-radius: 15px;
@@ -101,17 +103,36 @@ ul{
     border-radius: 5px;
     text-align: center;
 }
-@media (max-width:600px) {
+@media (max-width:1250){
+    .main-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .button{
+        width: 80%;
+    }
+    .cont-sec-1 ,.cont-sec-2{
+        width: 100%;
+    }
+}
+@media (max-width:800px) {
     .header-container{
         text-align: center;
     }
     .button{
         width: 15%;
+        margin-left: 45%;
     }
     .main-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 2rem;
+    }
+    .cont-sec-1 ,.cont-sec-2{
+        width: 100%;
+
     }
 }
 </style>
