@@ -11,7 +11,8 @@ nav{
     background-color: #000;
     color: #fff;
     font-size: 20px;
-   
+
+    
 }
 .navbar{
     display: flex;
@@ -20,7 +21,6 @@ nav{
     min-height: 10vh;
     width: 95%;
     margin: auto;
-    position: sticky;
 }
 .side-1{
     display: flex;
@@ -32,7 +32,7 @@ ul{
 .container-1{
    min-height: 100vh;
    position: relative; 
-    
+   
 }
 img{
     width: 100%;
