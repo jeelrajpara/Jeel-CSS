@@ -13,14 +13,15 @@
     body {
         height: 100vh;
         letter-spacing: 2px;
+       
     }
 
     .image {
         background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(72, 71, 71, 0.7)), url(hero-bg.jpg) top left no-repeat;
-        /* background-repeat: no-repeat; */
+       
         background-attachment: fixed;
         background-size: cover;
-        height: 100%;
+        
     }
 
     span {
@@ -31,7 +32,7 @@
         background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(about-bg.jpg), top left no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        height: 100%;
+       
     }
 
     .round-image>img {
@@ -71,7 +72,7 @@
         background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(events-bg.jpg) top left no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        height: 100%;
+       
     }
 
     .event>img {
@@ -120,14 +121,20 @@
         color: #fff;
         text-align: center;
     }
+    .zoom{
+        transition: 0.5s;
+    }
+    .zoom:hover{
+          scale: 1.1;
+    }
 </style>
 
 <body>
-    <div class="container-fluid image">
+    <div class="container-fluid image h-100 w-100">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
 
-            <div class="container mt-5">
+            <div class="container">
                 <a class="navbar-brand text-white mb-0 h1 fs-3 " href="#">Restaurantly</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -177,7 +184,7 @@
             </div>
 
         </nav>
-        <div class=" container justify-conternt-center align-items-center h-50 mt-5 text-white ">
+        <div class=" container mt-5 text-white">
             <h1 class="mb-2">Welcome to <span>Restaurantly</span></h1>
             <p class="mb-5">Delivering Great food for more than 18 years!</p>
             <button type="button" class="btn btn-dark border border-warning rounded-pill p-2">Our Menu</button>
@@ -186,7 +193,7 @@
     </div>
     <div class="container-fluid image-2 ">
         <div class="row">
-            <div class="col mt-5 text-white opacity-50">
+            <div class="col-md-6 col-sm-10 mt-5 text-white opacity-50">
                 <h3>Voluptatem Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, Lorem ipsum dolor, sit amet
                     consectetur adipisicing elit. Consequatur, qui.</p>
@@ -197,22 +204,20 @@
                 <p><i class="fa-solid fa-check" style="margin-right: 5px;"></i>Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Voluptate, voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Aliquid, sint fuga? Sed odit porro velit?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores mollitia repellendus rem,
-                    officiis sunt accusamus eaque, fugit iste consequatur maxime unde ipsum nostrum? Dolores</p>
             </div>
-            <div class="col mt-5">
-                <img src="about.jpg" class="img-fluid" alt="" style="border: 5px solid grey ;">
+            <div class="col-md-6 col-sm-2 mt-5 mb-4">
+                <img src="about.jpg" class="d-block w-100" alt="" style="border: 5px solid grey ;">
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid bg-dark ">
         <div class="container text-white p-3">
-            <p>Why us</p>
-            <h2 class="text-warning">
+            <p class="mt-5">Why us</p>
+            <h2 class="text-warning mt-5">
                 Why choose our restaurant
             </h2>
-            <div class="row">
-                <div class="col">
+            <div class="row mt-5">
+                <div class="col-lg-4">
                     <div class="card bg-dark">
                         <div class="card-body">
                             <h1 class=" card-title text-warning">01</h1>
@@ -225,7 +230,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4">
                     <div class="card bg-dark">
                         <div class="card-body">
                             <h1 class=" card-title text-warning">02</h1>
@@ -238,7 +243,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg-4">
                     <div class="card bg-dark">
                         <div class="card-body">
                             <h1 class=" card-title text-warning">03</h1>
@@ -256,8 +261,8 @@
     </div>
     <div class="container-fluid bg-dark">
         <div class="container p-3 ">
-            <p class="text-muted">Why us</p>
-            <h2 class="text-warning">Check Our Tasty Menu</h2>
+            <p class="text-muted mt-5">Why us</p>
+            <h2 class="text-warning mt-5">Check Our Tasty Menu</h2>
             <div class="d-flex text-white" style="margin-left: 35%;">
                 <p class="px-3"> <a href="#">All </a></p>
                 <p class="px-3"><a href="#">Starters</a></p>
@@ -265,7 +270,7 @@
                 <p class="px-3"><a href="#">Speciality</a></p>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-6">
                     <div class="d-flex position-relative g-4">
                         <div class="round-image">
                             <img src="lobster-bisque.jpg" alt="">
@@ -337,7 +342,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-6">
                     <div class="d-flex position-relative g-4">
                         <div class="round-image">
                             <img src="bread-barrel.jpg" alt="">
@@ -400,11 +405,11 @@
     </div>
     <div class="container-fluid bg-dark">
         <div class="container p-3">
-            <p class="text-muted">Speicals</p>
+            <p class="text-muted mt-2">Speicals</p>
             <h2 class="text-warning">Check Our Specials</h2>
             <div class="row">
-                <div class="col-3" style="border-right: 2px solid #cda45e;">
-                    <ul class="list-group p-3">
+                <div class="col-sm-3" style="border-right: 2px solid #cda45e;">
+                    <ul class="list-group">
                         <li class="list-group-items mb-3"><a href="#">Modi sit est</a></li>
                         <li class="list-group-items mb-3"><a href="#">Unde praesentium sed</a></li>
                         <li class="list-group-items mb-3"><a href="#">Pariature explicabo vel</a></li>
@@ -412,7 +417,7 @@
                         <li class="list-group-items mb-3"><a href="#">Lusto ut expedita aut</a></li>
                     </ul>
                 </div>
-                <div class="col-6">
+                <div class="col-sm-7">
                     <h2 class="text-white">Architecto ut aperiam autem id</h2>
                     <p class="text-muted">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer
                         a videna mareta paulona marka</p>
@@ -421,7 +426,7 @@
                         eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus
                         nostrum rem vero</p>
                 </div>
-                <div class="col special">
+                <div class="col-sm-2 special">
                     <img src="specials-1.png" alt="">
                 </div>
             </div>
@@ -443,10 +448,10 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col lg-4 event">
+                            <div class="col lg-6 event">
                                 <img src="event-birthday.jpg" class="d-block w-100 " alt="">
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6">
                                 <h2 class="text-warning ">Birthday parties</h2>
                                 <p class="text-white">$189</p>
                                 <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -467,10 +472,10 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col lg-4 event">
+                            <div class="col lg-6 event">
                                 <img src="event-private.jpg" class="d-block w-100" alt="">
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6">
                                 <h2 class="text-warning mb-1">Private parties</h2>
                                 <p class="text-white mb-1">$290</p>
                                 <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -491,10 +496,10 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col lg-4 event">
+                            <div class="col lg-6 event">
                                 <img src="event-custom.jpg" class="d-block w-100" alt="">
                             </div>
-                            <div class="col">
+                            <div class="col-lg-6">
                                 <h2 class="text-warning mb-1">Custom parties</h2>
                                 <p class="text-white mb-1">$99</p>
                                 <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -748,30 +753,30 @@
             <p class="text-muted mb-1">Gallery</p>
             <h2 class="text-warning">Some Photos from our Restaurant</h2>
             <div class="d-flex">
-                <div class="col lg-3">
+                <div class="col lg-3 zoom">
                     <img src="gallery-1.jpg" class="d-block w-100" alt="">
                 </div>
-                <div class="col lg-3">
+                <div class="col lg-3 zoom">
                     <img src="gallery-2.jpg" class="d-block w-100" alt="">
                 </div>
-                <div class="col lg-3">
+                <div class="col lg-3 zoom">
                     <img src="gallery-3.jpg" class="d-block w-100" alt="">
                 </div>
-                <div class="col lg-3">
+                <div class="col lg-3 zoom">
                     <img src="gallery-4.jpg" class="d-block w-100" alt="">
                 </div>
             </div>
             <div class="d-flex">
-                <div class="col lg-3">
+                <div class="col lg-3 zoom">
                     <img src="gallery-5.jpg" class="d-block w-100" alt="">
                 </div>
-                <div class="col lg-3">
+                <div class="col lg-3 zoom">
                     <img src="gallery-6.jpg" class="d-block w-100" alt="">
                 </div>
-                <div class="col lg-3">
+                <div class="col lg-3 zoom">
                     <img src="gallery-7.jpg" class="d-block w-100" alt="">
                 </div>
-                <div class="col lg-3">
+                <div class="col lg-3 zoom">
                     <img src="gallery-8.jpg" class="d-block w-100" alt="">
                 </div>
             </div>
@@ -782,23 +787,30 @@
             <p class="text-muted mb-1">Chefs</p>
             <h2 class="text-warning">Our professional chefs</h2>
             <div class="row">
-                <div class="col">
+                <div class="col-lg-4 chef">
                     <img src="chefs-1.jpg" class="d-block w-100" alt="">
                 </div>
-                <div class="col">
+                <div class="col-lg-4 chef">
                     <img src="chefs-2.jpg" class="d-block w-100" alt="">
                 </div>
-                <div class="col">
+                <div class="col-lg-4 chef">
                     <img src="chefs-3.jpg" class="d-block w-100" alt="">
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid bg-dark">
+        <div class="container">
+            <p class="text-muted mb-1">Contact</p>
+            <h2 class="text-warning">Locate us</h2>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29375.47239630905!2d72.5624093!3d23.0261936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8461a2095f23%3A0xca272b244270caea!2sHyatt%20Regency%20Ahmedabad!5e0!3m2!1sen!2sin!4v1686560982127!5m2!1sen!2sin" width="1250" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
         <div class="container-fluid bg-dark p-3">
             <div class="container text-white">
-                <div class="row">
-                    <div class="col-3">
+                <div class="row mt-5">
+                    <div class="col-lg-3">
                         <p class="fs-3 mb-3">Restaurantly</p>
                         <p class="mb-0">A108 Adam Street</p>
                         <p class="mb-3"> NY 535022, USA</p>
@@ -812,7 +824,7 @@
                             <i class="fa-brands fa-skype"></i>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-3">
                         <p class="mb-3"><b>Useful links</b></p>
                         <ul class="list-group">
                             <li class="mb-2 list-group-items"><a href="#"> <i class="fa-solid fa-greater-than" style="font-size: 12px; margin-right:5px; color: #cda45e;"> </i>Home</a></li>
@@ -822,7 +834,7 @@
                             <li class="mb-2 list-group-items"><a href="#"> <i class="fa-solid fa-greater-than" style="font-size: 12px; margin-right:5px; color: #cda45e;"> </i>Privacy policy</a></li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-3">
                         <p class="mb-3"><b>Our services</b></p>
                         <ul class="list-group">
                             <li class="mb-2 list-group-items"><a href="#"> <i class="fa-solid fa-greater-than" style="font-size: 12px; margin-right:5px; color: #cda45e;"> </i>Web design</a></li>
@@ -832,7 +844,7 @@
                             <li class="mb-2 list-group-items"><a href="#"> <i class="fa-solid fa-greater-than" style="font-size: 12px; margin-right:5px; color: #cda45e;"> </i>Graphic design</a></li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-3">
                         <p class="mb-3"><b>Our Newsletter</b></p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                         <button type="button" class="btn btn-warning text-white rounded-pill" style="margin-left: 60%;">
